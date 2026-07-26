@@ -1,0 +1,265 @@
+/* getvibe.dev — The Vibe Suite */
+
+:root {
+  --bg: #0a0a0b;
+  --bg-raised: #101013;
+  --fg: #ececee;
+  --muted: #9c9ca6;
+  --faint: #63636d;
+  --line: rgba(255, 255, 255, 0.08);
+  --accent: #a8c1ff;
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fafafa;
+    --bg-raised: #ffffff;
+    --fg: #161618;
+    --muted: #55555e;
+    --faint: #8a8a93;
+    --line: rgba(0, 0, 0, 0.09);
+    --accent: #2b4fc9;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+a:hover {
+  border-bottom-color: var(--faint);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* --- Header --- */
+
+.site-header {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 28px 24px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.wordmark {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.site-header nav a {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.site-header nav a:hover {
+  color: var(--fg);
+}
+
+/* --- Hero --- */
+
+main {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero {
+  padding: 120px 0 96px;
+  max-width: 620px;
+}
+
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: 32px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.hero .lede {
+  margin: 0 0 14px;
+  font-size: 17px;
+  color: var(--fg);
+  letter-spacing: -0.01em;
+}
+
+.hero .sub {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 480px;
+}
+
+/* --- Product grid --- */
+
+.products {
+  padding-bottom: 128px;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+@media (min-width: 620px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 920px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card {
+  background: var(--bg);
+  padding: 28px 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background 120ms ease;
+}
+
+.card:hover {
+  background: var(--bg-raised);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.card .tagline {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  flex-grow: 1;
+}
+
+.cmd {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 0;
+  padding: 7px 12px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--fg);
+  cursor: pointer;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 12.5px;
+  transition: border-color 120ms ease;
+}
+
+.cmd:hover {
+  border-color: var(--faint);
+}
+
+.cmd .hint {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 11px;
+  color: var(--faint);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.cmd:hover .hint,
+.cmd:focus-visible .hint {
+  opacity: 1;
+}
+
+.cmd.copied {
+  border-color: var(--accent);
+}
+
+.cmd.copied .hint {
+  opacity: 1;
+  color: var(--accent);
+}
+
+.card .links {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--faint);
+  display: flex;
+  gap: 8px;
+}
+
+.card .links a {
+  color: var(--muted);
+}
+
+.card .links a:hover {
+  color: var(--fg);
+}
+
+/* --- Footer --- */
+
+.site-footer {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 24px 56px;
+  font-size: 12.5px;
+  color: var(--faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  justify-content: space-between;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
