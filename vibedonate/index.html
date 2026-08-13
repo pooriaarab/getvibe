@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vibedonate — donate your spare local compute · getvibe.dev</title>
+  <meta name="description" content="vibedonate donates your spare local compute while your machine is idle — you control when it runs. One command: npx vibedonate. Part of the Vibe Suite.">
+  <link rel="canonical" href="https://getvibe.dev/vibedonate">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="getvibe.dev">
+  <meta property="og:title" content="vibedonate — donate your spare local compute">
+  <meta property="og:description" content="Put your idle machine to work; you decide when it runs. Local-first: your machine, your keys.">
+  <meta property="og:url" content="https://getvibe.dev/vibedonate">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="vibedonate — donate your spare local compute">
+  <meta name="twitter:description" content="Put your idle machine to work; you decide when it runs. Local-first: your machine, your keys.">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "vibedonate",
+    "description": "vibedonate donates your spare local compute while your machine is idle — you control when it runs. One command: npx vibedonate.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS, Linux, Windows",
+    "url": "https://www.npmjs.com/package/vibedonate",
+    "codeRepository": "https://github.com/pooriaarab/vibedonate",
+    "author": { "@type": "Person", "url": "https://github.com/pooriaarab" },
+    "isPartOf": { "@type": "WebSite", "@id": "https://getvibe.dev/#website", "url": "https://getvibe.dev/", "name": "getvibe.dev — The Vibe Suite" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="wordmark" href="/">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        getvibe.dev
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/">the suite</a>
+        <a href="https://github.com/pooriaarab" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article>
+        <header class="hero product-hero">
+          <h1>vibedonate</h1>
+          <p class="lede">Donate your spare local compute.</p>
+          <div class="install">
+            <code class="cmd">npx vibedonate</code>
+            <button class="copy" type="button" data-copy="npx vibedonate" aria-label="Copy install command: npx vibedonate" aria-live="polite">copy</button>
+          </div>
+        </header>
+
+        <figure class="demo">
+          <video src="/videos/vibedonate-16x9.mp4" autoplay muted loop playsinline controls preload="metadata" aria-label="vibedonate launch demo video, no audio"></video>
+          <figcaption>Launch demo — silent and looping; pause anytime with the player controls.</figcaption>
+        </figure>
+
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title">What it does</h2>
+          <p>vibedonate puts your idle machine to work. When your computer has spare capacity, vibedonate donates it — and gets out of the way when you need your machine back.</p>
+          <ul class="features">
+            <li>Donates spare local compute while you&rsquo;re away</li>
+            <li>Starts and stops with a single command</li>
+            <li>You decide when it runs and when it doesn&rsquo;t</li>
+            <li>Local-first: nothing runs without your say-so</li>
+          </ul>
+        </section>
+
+        <p class="actions">
+          <a class="btn btn--accent" href="https://www.npmjs.com/package/vibedonate" rel="noopener" aria-label="vibedonate on npm">npm</a>
+          <a class="btn" href="https://github.com/pooriaarab/vibedonate" rel="noopener" aria-label="vibedonate on GitHub">github</a>
+        </p>
+
+        <p class="back"><a href="/"><span aria-hidden="true">&larr; </span>Back to the suite</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-in">
+      <p>getvibe.dev — the Vibe Suite. Local-first: your machine, your keys.</p>
+      <p><a href="https://github.com/pooriaarab" rel="noopener">github.com/pooriaarab</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('video[autoplay]').forEach(function (v) {
+          v.removeAttribute('autoplay');
+          v.pause();
+        });
+      }
+      function flash(btn, ok) {
+        btn.textContent = ok ? 'copied' : 'failed';
+        btn.classList.toggle('copied', ok);
+        setTimeout(function () {
+          btn.textContent = 'copy';
+          btn.classList.remove('copied');
+        }, 1400);
+      }
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return false; });
+        }
+        return new Promise(function (resolve) {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'absolute';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta);
+          resolve(ok);
+        });
+      }
+      document.querySelectorAll('.copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          copyText(btn.dataset.copy).then(function (ok) { flash(btn, ok); });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vibeshare — share your live agent session by URL · getvibe.dev</title>
+  <meta name="description" content="vibeshare gives your live agent session a URL anyone can watch in a browser. Local-first, one command: npx vibeshare-live. Part of the Vibe Suite.">
+  <link rel="canonical" href="https://getvibe.dev/vibeshare">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="getvibe.dev">
+  <meta property="og:title" content="vibeshare — share your live agent session by URL">
+  <meta property="og:description" content="One command turns a running agent session into a link anyone can watch. Local-first: your machine, your keys.">
+  <meta property="og:url" content="https://getvibe.dev/vibeshare">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="vibeshare — share your live agent session by URL">
+  <meta name="twitter:description" content="One command turns a running agent session into a link anyone can watch. Local-first: your machine, your keys.">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "vibeshare",
+    "description": "vibeshare gives your live agent session a URL anyone can watch in a browser. Local-first, one command: npx vibeshare-live.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS, Linux, Windows",
+    "url": "https://www.npmjs.com/package/vibeshare-live",
+    "codeRepository": "https://github.com/pooriaarab/vibeshare",
+    "author": { "@type": "Person", "url": "https://github.com/pooriaarab" },
+    "isPartOf": { "@type": "WebSite", "@id": "https://getvibe.dev/#website", "url": "https://getvibe.dev/", "name": "getvibe.dev — The Vibe Suite" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="wordmark" href="/">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        getvibe.dev
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/">the suite</a>
+        <a href="https://github.com/pooriaarab" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article>
+        <header class="hero product-hero">
+          <h1>vibeshare</h1>
+          <p class="lede">Share your live agent session by URL.</p>
+          <div class="install">
+            <code class="cmd">npx vibeshare-live</code>
+            <button class="copy" type="button" data-copy="npx vibeshare-live" aria-label="Copy install command: npx vibeshare-live" aria-live="polite">copy</button>
+          </div>
+        </header>
+
+        <figure class="demo">
+          <video src="/videos/vibeshare-16x9.mp4" autoplay muted loop playsinline controls preload="metadata" aria-label="vibeshare launch demo video, no audio"></video>
+          <figcaption>Launch demo — silent and looping; pause anytime with the player controls.</figcaption>
+        </figure>
+
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title">What it does</h2>
+          <p>vibeshare gives your live agent session a URL. Run one command and anyone with the link can watch the session unfold in their browser — no install on their side.</p>
+          <ul class="features">
+            <li>One command turns a running session into a link</li>
+            <li>Viewers watch live in a browser — nothing to install</li>
+            <li>The link stops working when you end the session</li>
+            <li>Streams from your machine, under your control</li>
+          </ul>
+        </section>
+
+        <p class="actions">
+          <a class="btn btn--accent" href="https://www.npmjs.com/package/vibeshare-live" rel="noopener" aria-label="vibeshare on npm">npm</a>
+          <a class="btn" href="https://github.com/pooriaarab/vibeshare" rel="noopener" aria-label="vibeshare on GitHub">github</a>
+        </p>
+
+        <p class="back"><a href="/"><span aria-hidden="true">&larr; </span>Back to the suite</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-in">
+      <p>getvibe.dev — the Vibe Suite. Local-first: your machine, your keys.</p>
+      <p><a href="https://github.com/pooriaarab" rel="noopener">github.com/pooriaarab</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('video[autoplay]').forEach(function (v) {
+          v.removeAttribute('autoplay');
+          v.pause();
+        });
+      }
+      function flash(btn, ok) {
+        btn.textContent = ok ? 'copied' : 'failed';
+        btn.classList.toggle('copied', ok);
+        setTimeout(function () {
+          btn.textContent = 'copy';
+          btn.classList.remove('copied');
+        }, 1400);
+      }
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return false; });
+        }
+        return new Promise(function (resolve) {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'absolute';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta);
+          resolve(ok);
+        });
+      }
+      document.querySelectorAll('.copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          copyText(btn.dataset.copy).then(function (ok) { flash(btn, ok); });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
