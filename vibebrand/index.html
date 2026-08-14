@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vibebrand — tokenized brand/design-system generator · getvibe.dev</title>
+  <meta name="description" content="vibebrand generates a complete, tokenized brand/design system — pick one of 14 directions and get CSS design tokens (light + dark), fonts, and a brand-kit starting point. SDK + CLI. One command: npx vibebrand.">
+  <link rel="canonical" href="https://getvibe.dev/vibebrand">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="getvibe.dev">
+  <meta property="og:title" content="vibebrand — tokenized brand/design-system generator">
+  <meta property="og:description" content="Pick one of 14 directions and get CSS design tokens (light + dark), fonts, and a brand-kit starting point. SDK + CLI. Local-first: your machine, your keys.">
+  <meta property="og:url" content="https://getvibe.dev/vibebrand">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="vibebrand — tokenized brand/design-system generator">
+  <meta name="twitter:description" content="Pick one of 14 directions and get CSS design tokens (light + dark), fonts, and a brand-kit starting point. SDK + CLI. Local-first: your machine, your keys.">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "vibebrand",
+    "description": "vibebrand generates a complete, tokenized brand/design system — pick one of 14 directions and get CSS design tokens (light + dark), fonts, and a brand-kit starting point. SDK + CLI. One command: npx vibebrand.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS, Linux, Windows",
+    "url": "https://github.com/pooriaarab/vibebrand",
+    "codeRepository": "https://github.com/pooriaarab/vibebrand",
+    "author": { "@type": "Person", "url": "https://github.com/pooriaarab" },
+    "isPartOf": { "@type": "WebSite", "@id": "https://getvibe.dev/#website", "url": "https://getvibe.dev/", "name": "getvibe.dev — The Vibe Suite" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="wordmark" href="/">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        getvibe.dev
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/">the suite</a>
+        <a href="https://github.com/pooriaarab" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article>
+        <header class="hero product-hero">
+          <h1>vibebrand</h1>
+          <p class="lede">Generate a tokenized brand/design system — pick a direction, get design tokens.</p>
+          <div class="install">
+            <code class="cmd">npx vibebrand</code>
+            <button class="copy" type="button" data-copy="npx vibebrand" aria-label="Copy install command: npx vibebrand" aria-live="polite">copy</button>
+          </div>
+        </header>
+
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title">What it does</h2>
+          <p>vibebrand generates a complete, tokenized brand/design system. Pick one of 14 directions and get CSS design tokens (light + dark), fonts, and a brand-kit starting point — SDK + CLI, one command.</p>
+          <ul class="features">
+            <li>Pick from 14 brand/design directions</li>
+            <li>CSS design tokens for light and dark themes</li>
+            <li>Fonts and a brand-kit starting point</li>
+            <li>SDK + CLI — installs with a single npx command</li>
+          </ul>
+        </section>
+
+        <p class="actions">
+          <a class="btn btn--accent" href="https://www.npmjs.com/package/vibebrand" rel="noopener" aria-label="vibebrand on npm">npm</a>
+          <a class="btn" href="https://github.com/pooriaarab/vibebrand" rel="noopener" aria-label="vibebrand on GitHub">github</a>
+        </p>
+
+        <p class="back"><a href="/"><span aria-hidden="true">&larr; </span>Back to the suite</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-in">
+      <p>getvibe.dev — the Vibe Suite. Local-first: your machine, your keys.</p>
+      <p><a href="https://github.com/pooriaarab" rel="noopener">github.com/pooriaarab</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function flash(btn, ok) {
+        btn.textContent = ok ? 'copied' : 'failed';
+        btn.classList.toggle('copied', ok);
+        setTimeout(function () {
+          btn.textContent = 'copy';
+          btn.classList.remove('copied');
+        }, 1400);
+      }
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return false; });
+        }
+        return new Promise(function (resolve) {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'absolute';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta);
+          resolve(ok);
+        });
+      }
+      document.querySelectorAll('.copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          copyText(btn.dataset.copy).then(function (ok) { flash(btn, ok); });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
