@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vibecodereview — a council of AI models reviews your PR · getvibe.dev</title>
+  <meta name="description" content="vibecodereview runs a council of AI models on every pull request — many models, one check. Claude chairs: verifies each claim, fixes what it can, posts one review. Install: npm install vibecodereview. Part of the Vibe Suite.">
+  <link rel="canonical" href="https://getvibe.dev/vibecodereview">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="getvibe.dev">
+  <meta property="og:title" content="vibecodereview — a council of AI models reviews your PR">
+  <meta property="og:description" content="Many models, one check. Claude chairs the council: verifies each claim, fixes what it can confirm, posts one review. Local-first: your machine, your keys.">
+  <meta property="og:url" content="https://getvibe.dev/vibecodereview">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="vibecodereview — a council of AI models reviews your PR">
+  <meta name="twitter:description" content="Many models, one check. Claude chairs the council: verifies each claim, fixes what it can confirm, posts one review. Local-first: your machine, your keys.">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "vibecodereview",
+    "description": "vibecodereview runs a council of AI models on every pull request — many models, one check. Claude chairs: verifies each claim against the code, fixes what it can confirm, posts one review. Install: npm install vibecodereview.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS, Linux, Windows",
+    "url": "https://www.npmjs.com/package/vibecodereview",
+    "codeRepository": "https://github.com/pooriaarab/vibecodereview",
+    "author": { "@type": "Person", "url": "https://github.com/pooriaarab" },
+    "isPartOf": { "@type": "WebSite", "@id": "https://getvibe.dev/#website", "url": "https://getvibe.dev/", "name": "getvibe.dev — The Vibe Suite" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="wordmark" href="/">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        getvibe.dev
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/">the suite</a>
+        <a href="https://github.com/pooriaarab" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article>
+        <header class="hero product-hero">
+          <h1>vibecodereview</h1>
+          <p class="lede">A council of AI models reviews your PR — many models, one check.</p>
+          <div class="install">
+            <code class="cmd">npm install vibecodereview</code>
+            <button class="copy" type="button" data-copy="npm install vibecodereview" aria-label="Copy install command: npm install vibecodereview" aria-live="polite">copy</button>
+          </div>
+        </header>
+
+        <section class="about" aria-labelledby="about-title">
+          <h2 id="about-title">What it does</h2>
+          <p>vibecodereview puts an LLM council on every pull request. Each model reviews the diff through a different lens — correctness, performance, security, maintainability — so they catch different things. Claude chairs: it verifies each claim against the code, discards false positives, fixes what it can confirm, pushes the fix, and posts one review. The check heals itself toward green.</p>
+          <ul class="features">
+            <li>Each model reviews the diff through a different lens — correctness, performance, security, maintainability</li>
+            <li>Claude chairs: verifies each claim against the code and discards false positives</li>
+            <li>Fixes what it can confirm, pushes the fix, and posts one review — the check heals itself toward green</li>
+            <li>Runs as a GitHub Action, a CLI, or an MCP server</li>
+            <li><code>npx vibecodereview init</code> adds it to a repo</li>
+          </ul>
+        </section>
+
+        <p class="actions">
+          <a class="btn btn--accent" href="https://www.npmjs.com/package/vibecodereview" rel="noopener" aria-label="vibecodereview on npm">npm</a>
+          <a class="btn" href="https://github.com/pooriaarab/vibecodereview" rel="noopener" aria-label="vibecodereview on GitHub">github</a>
+        </p>
+
+        <p class="back"><a href="/"><span aria-hidden="true">&larr; </span>Back to the suite</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-in">
+      <p>getvibe.dev — the Vibe Suite. Local-first: your machine, your keys.</p>
+      <p><a href="https://github.com/pooriaarab" rel="noopener">github.com/pooriaarab</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      function flash(btn, ok) {
+        btn.textContent = ok ? 'copied' : 'failed';
+        btn.classList.toggle('copied', ok);
+        setTimeout(function () {
+          btn.textContent = 'copy';
+          btn.classList.remove('copied');
+        }, 1400);
+      }
+      function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return false; });
+        }
+        return new Promise(function (resolve) {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'absolute';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) {}
+          document.body.removeChild(ta);
+          resolve(ok);
+        });
+      }
+      document.querySelectorAll('.copy').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          copyText(btn.dataset.copy).then(function (ok) { flash(btn, ok); });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
