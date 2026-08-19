@@ -1,10 +1,10 @@
 # The Vibe Suite
 
-> getvibe.dev is the hub for The Vibe Suite — eight local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys.
+> getvibe.dev is the hub for The Vibe Suite — nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys.
 
 ## Product
 
-The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — eight local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys..
+The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys..
 
 ## Free tools
 
@@ -16,6 +16,7 @@ The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — eight local-firs
 - [vibedate](https://getvibe.dev/vibedate): A companion for your agent.
 - [vibeads](https://getvibe.dev/vibeads): Contextual tool discovery.
 - [vibenotifications](https://getvibe.dev/vibenotifications): Get notified on session events.
+- [vibecodereview](https://getvibe.dev/vibecodereview): A council of AI models reviews your PR.
 
 ## Plans
 

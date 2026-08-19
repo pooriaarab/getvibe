@@ -12,7 +12,7 @@ Developers who work with agentic coding CLIs (Claude Code, Codex, Gemini) and wa
 
 ## Product Purpose
 
-getvibe.dev is the hub for **The Vibe Suite** — eight single-command companions for a coding agent: viberadio, vibemovie, vibelive, vibeshare, vibedonate, vibedate, vibeads, vibenotifications. The site must let a visitor understand what the suite is, pick a tool, and copy its install command within seconds.
+getvibe.dev is the hub for **The Vibe Suite** — nine single-command companions for a coding agent: viberadio, vibemovie, vibelive, vibeshare, vibedonate, vibedate, vibeads, vibenotifications, vibecodereview. The site must let a visitor understand what the suite is, pick a tool, and copy its install command within seconds.
 
 ## Positioning
 
@@ -21,7 +21,7 @@ Local-first companions: "your machine, your keys." Each tool installs with one `
 ## Operating Context
 
 - Site is a static deploy at https://getvibe.dev (subpages as clean URLs `/<slug>`).
-- Launch videos for six products exist at `/videos/<name>-16x9.mp4` (and 9x16 variants); vibeads and vibenotifications have none.
+- Launch videos for six products exist at `/videos/<name>-16x9.mp4` (and 9x16 variants); vibeads, vibenotifications, and vibecodereview have none.
 - Every product has both an npm package page and a GitHub repo under `pooriaarab/`.
 
 ## Capabilities and Constraints
