@@ -1,6 +1,6 @@
 # AGENTS.md — getvibe.dev
 
-Hub site for **The Vibe Suite**: eight local-first companions for agentic coding CLIs (Claude Code, Codex, Gemini). This repo is the static catalog at https://getvibe.dev — not the tools themselves.
+Hub site for **The Vibe Suite**: ten local-first companions for agentic coding CLIs (Claude Code, Codex, Gemini). This repo is the static catalog at https://getvibe.dev — not the tools themselves.
 
 ## Mental model
 
@@ -23,6 +23,8 @@ You pick a companion → you get one `npx` command that runs on the user's machi
 | [vibedate](https://getvibe.dev/vibedate) | `npx vibedate` | `pooriaarab/vibedating` |
 | [vibeads](https://getvibe.dev/vibeads) | `npx vibeads` | |
 | [vibenotifications](https://getvibe.dev/vibenotifications) | `npx vibenotifications` | |
+| [vibebrand](https://getvibe.dev/vibebrand) | `npx vibebrand` | |
+| [vibecodereview](https://getvibe.dev/vibecodereview) | `npx vibecodereview` | |
 
 ## The loop
 
