@@ -1,10 +1,10 @@
 # The Vibe Suite
 
-> getvibe.dev is the hub for The Vibe Suite — nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys.
+> getvibe.dev is the hub for The Vibe Suite — ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys.
 
 ## What it is
 
-The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys..
+The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys..
 
 ## Platforms
 
@@ -24,12 +24,13 @@ The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — nine local-first
 - [vibedate](https://getvibe.dev/vibedate): A companion for your agent.
 - [vibeads](https://getvibe.dev/vibeads): Contextual tool discovery.
 - [vibenotifications](https://getvibe.dev/vibenotifications): Get notified on session events.
+- [vibebrand](https://getvibe.dev/vibebrand): Tokenized brand/design system — CSS design tokens, fonts, and a brand kit.
 - [vibecodereview](https://getvibe.dev/vibecodereview): A council of AI models reviews your PR.
 
 ## Common questions
 
 Q: What is The Vibe Suite?
-A: Nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini.
+A: Ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini.
 
 Q: How do I install a tool?
 A: Each tool installs with a single npx command and runs next to your agent CLI — no dashboard, no cloud account.

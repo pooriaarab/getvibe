@@ -4,7 +4,7 @@
 
 ## Product
 
-Each companion is a public npm package. You run it with one npx command on your own machine, next to your agent CLI. No dashboard, no cloud account, no SDK.
+Each companion is a public npm package. You run it with one npx command on your own machine, next to your agent CLI. No dashboard, no cloud account.
 
 ## Free tools
 
