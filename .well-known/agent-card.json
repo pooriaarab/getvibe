@@ -1,0 +1,73 @@
+{
+  "name": "The Vibe Suite",
+  "description": "Ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Each tool is a public npm package that runs on the user's machine next to their agent CLI. Your machine, your keys.",
+  "url": "https://getvibe.dev/",
+  "provider": {
+    "organization": "The Vibe Suite",
+    "url": "https://getvibe.dev/"
+  },
+  "version": "1.0.0",
+  "capabilities": {},
+  "skills": [
+    {
+      "id": "viberadio",
+      "name": "viberadio",
+      "description": "Your agent's output as audio — narration, podcast, or music.",
+      "examples": ["npx viberadio-fm"]
+    },
+    {
+      "id": "vibemovie",
+      "name": "vibemovie",
+      "description": "Your coding session as a short recap video.",
+      "examples": ["npx vibemovie"]
+    },
+    {
+      "id": "vibelive",
+      "name": "vibelive",
+      "description": "Multiplayer for agent terminals.",
+      "examples": ["npx vibelive"]
+    },
+    {
+      "id": "vibeshare",
+      "name": "vibeshare",
+      "description": "Share your live agent session by URL.",
+      "examples": ["npx vibeshare-live"]
+    },
+    {
+      "id": "vibedonate",
+      "name": "vibedonate",
+      "description": "Donate your spare local compute.",
+      "examples": ["npx vibedonate"]
+    },
+    {
+      "id": "vibedate",
+      "name": "vibedate",
+      "description": "Dating by token league.",
+      "examples": ["npx vibedate"]
+    },
+    {
+      "id": "vibeads",
+      "name": "vibeads",
+      "description": "Contextual dev-tool discovery for Claude Code.",
+      "examples": ["npx vibeads"]
+    },
+    {
+      "id": "vibenotifications",
+      "name": "vibenotifications",
+      "description": "Customizable notifications for Claude Code.",
+      "examples": ["npx vibenotifications"]
+    },
+    {
+      "id": "vibebrand",
+      "name": "vibebrand",
+      "description": "Tokenized brand/design system — CSS design tokens, fonts, and a brand kit.",
+      "examples": ["npx vibebrand"]
+    },
+    {
+      "id": "vibecodereview",
+      "name": "vibecodereview",
+      "description": "A council of AI models reviews your PR.",
+      "examples": ["npx vibecodereview"]
+    }
+  ]
+}

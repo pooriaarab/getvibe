@@ -1,23 +1,31 @@
 # The Vibe Suite
 
-> getvibe.dev is the hub for The Vibe Suite — nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys.
+> getvibe.dev is the hub for The Vibe Suite — ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys.
 
 ## Product
 
-The Vibe Suite is getvibe.dev is the hub for The Vibe Suite — nine local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Your machine, your keys..
+Each companion is a public npm package. You run it with one npx command on your own machine, next to your agent CLI. No dashboard, no cloud account, no SDK.
 
 ## Free tools
 
-- [viberadio](https://getvibe.dev/viberadio): Narrate your agent session as audio.
-- [vibemovie](https://getvibe.dev/vibemovie): Turn a session into a recap video.
-- [vibelive](https://getvibe.dev/vibelive): Multiplayer terminals for your agent.
-- [vibeshare](https://getvibe.dev/vibeshare): Share a live session.
-- [vibedonate](https://getvibe.dev/vibedonate): Collect support for your work.
-- [vibedate](https://getvibe.dev/vibedate): A companion for your agent.
-- [vibeads](https://getvibe.dev/vibeads): Contextual tool discovery.
-- [vibenotifications](https://getvibe.dev/vibenotifications): Get notified on session events.
-- [vibecodereview](https://getvibe.dev/vibecodereview): A council of AI models reviews your PR.
+- [viberadio](https://getvibe.dev/viberadio): Your agent's output as audio — narration, podcast, or music. `npx viberadio-fm`
+- [vibemovie](https://getvibe.dev/vibemovie): Your coding session as a short recap video. `npx vibemovie`
+- [vibelive](https://getvibe.dev/vibelive): Multiplayer for agent terminals. `npx vibelive`
+- [vibeshare](https://getvibe.dev/vibeshare): Share your live agent session by URL. `npx vibeshare-live`
+- [vibedonate](https://getvibe.dev/vibedonate): Donate your spare local compute. `npx vibedonate`
+- [vibedate](https://getvibe.dev/vibedate): Dating by token league. `npx vibedate`
+- [vibeads](https://getvibe.dev/vibeads): Contextual dev-tool discovery for Claude Code. `npx vibeads`
+- [vibenotifications](https://getvibe.dev/vibenotifications): Customizable notifications for Claude Code. `npx vibenotifications`
+- [vibebrand](https://getvibe.dev/vibebrand): Tokenized brand/design system — CSS design tokens, fonts, and a brand kit. `npx vibebrand`
+- [vibecodereview](https://getvibe.dev/vibecodereview): A council of AI models reviews your PR. `npx vibecodereview`
 
-## Plans
+## Pricing
 
-- No plans listed.
+- Free. No paid plans, no account, no checkout.
+
+## Key links
+
+- [Agent guide (AGENTS.md)](https://getvibe.dev/agents.md)
+- [Full product text (llms-full.txt)](https://getvibe.dev/llms-full.txt)
+- [Agent card](https://getvibe.dev/.well-known/agent-card.json)
+- [Sitemap](https://getvibe.dev/sitemap.xml)
