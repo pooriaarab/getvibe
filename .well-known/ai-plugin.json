@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "The Vibe Suite",
+  "name_for_model": "the_vibe_suite",
+  "description_for_human": "Ten local-first companions for your coding agent.",
+  "description_for_model": "Hub for The Vibe Suite — ten local-first, one-command companions (viberadio, vibemovie, vibelive, vibeshare, vibedonate, vibedate, vibeads, vibenotifications, vibebrand, vibecodereview) for agentic coding CLIs. Each runs as an npx command on the user's machine. Discover via /llms.txt, /agents.md, and /.well-known/agent-card.json.",
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://getvibe.dev/favicon.svg",
+  "legal_info_url": "https://getvibe.dev/"
+}

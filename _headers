@@ -2,3 +2,5 @@
   Content-Type: text/markdown; charset=utf-8
 /agents.md
   Content-Type: text/markdown; charset=utf-8
+/
+  Link: </llms.txt>; rel="describedby", </.well-known/agent-card.json>; rel="service-meta"
