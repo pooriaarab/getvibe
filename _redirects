@@ -1,0 +1,18 @@
+# Serve the real 404 page, with a 404 status, for anything that does not exist.
+#
+# Without this the site answered 200 for every URL, including nonsense ones:
+#
+#   GET /zzz-not-real-9987  ->  200, rendering the home page
+#
+# That is single-page-application fallback behaviour, and on a static
+# multi-page site it lets a crawler index an unbounded number of URLs that
+# were never real pages.
+#
+# Cloudflare Pages matches static assets before a `_redirects` rule, so this
+# catch-all only fires when nothing else did. Real pages and their
+# directory index files are unaffected.
+#
+# If deploys still answer 200 for a missing path after this ships, the Pages
+# project itself is in SPA mode: turn that off in the dashboard, because that
+# setting overrides this file.
+/*  /404.html  404
