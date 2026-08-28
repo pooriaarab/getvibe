@@ -2,3 +2,7 @@
 .github
 .assetsignore
 PRODUCT.md
+.env
+.env.local
+.dev.vars
+.gitignore
