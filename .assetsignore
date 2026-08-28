@@ -1,0 +1,8 @@
+# Not part of the site.
+.github
+.assetsignore
+PRODUCT.md
+.env
+.env.local
+.dev.vars
+.gitignore

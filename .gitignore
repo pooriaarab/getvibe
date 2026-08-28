@@ -1,0 +1,8 @@
+# Local credentials. This repo is public -- keep them out of it.
+.env
+.env.local
+.dev.vars
+
+.DS_Store
+node_modules/
+.wrangler/

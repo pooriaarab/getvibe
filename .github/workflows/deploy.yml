@@ -1,0 +1,35 @@
+name: Deploy
+
+# main = staging, release = production.
+#
+# getvibe.dev is a Cloudflare Pages project (direct upload, no Git connection).
+# Its production_branch is already `release`, so a `wrangler pages deploy` that
+# passes --branch=release publishes to the live domain, and any other branch
+# name lands on a preview URL. That is the whole environment split -- there is
+# no second project to keep in sync.
+on:
+  push:
+    branches: [main, release]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare Pages
+    runs-on: ubicloud-standard-2
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      # --branch is what selects the environment. `release` matches the
+      # project's production_branch and publishes to getvibe.dev; `main`
+      # does not match, so it publishes to a preview URL instead.
+      - name: Deploy
+        run: bunx wrangler pages deploy . --project-name=getvibe --branch="${{ github.ref_name }}"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
