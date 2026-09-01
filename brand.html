@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand guide · getvibe.dev</title>
+  <meta name="description" content="Identity, color, type, voice, and interface rules for getvibe.dev and The Vibe Suite catalog.">
+  <link rel="canonical" href="https://getvibe.dev/brand">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .brand-doc { padding-bottom: var(--s-10); }
+    .brand-section { padding-block: var(--s-7); border-top: 1px solid var(--line); }
+    .brand-section h2 { margin-bottom: var(--s-4); font-size: var(--t-xl); }
+    .brand-section h3 { margin-bottom: var(--s-2); font-size: var(--t-md); }
+    .brand-section p { max-width: 44rem; color: var(--muted); }
+    .brand-section p + p { margin-top: var(--s-3); }
+    .brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1px; margin-top: var(--s-5); background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+    .brand-card { padding: var(--s-5); background: var(--bg); }
+    .brand-card code { color: var(--fg); }
+    .mark-stage { display: grid; place-items: center; min-height: 12rem; margin-top: var(--s-5); background: var(--bg-inset); border: 1px solid var(--line); border-radius: var(--r-md); }
+    .mark-lockup { display: inline-flex; align-items: center; gap: var(--s-3); font-weight: 650; }
+    .mark-lockup svg { width: 2rem; color: var(--accent); }
+    .swatch { display: block; height: 4rem; margin-bottom: var(--s-3); border: 1px solid var(--line-strong); border-radius: var(--r-sm); }
+    .swatch--canvas { background: #0a0a0c; }
+    .swatch--raised { background: #121216; }
+    .swatch--foreground { background: #ededf0; }
+    .swatch--muted { background: #a3a3ad; }
+    .swatch--signal { background: #f0b429; }
+    .swatch--signal-hover { background: #f6c555; }
+    .rules { display: grid; gap: var(--s-4); margin-top: var(--s-5); }
+    .rule { padding: var(--s-5); border: 1px solid var(--line); border-radius: var(--r-md); }
+    .rule strong { display: block; margin-bottom: var(--s-2); }
+    .rule--do strong { color: var(--accent); }
+    @media (min-width: 40rem) { .rules { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="wordmark" href="/">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        getvibe.dev
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="/">the suite</a>
+        <a href="/brand" aria-current="page">brand</a>
+        <a href="https://github.com/pooriaarab" rel="noopener">github</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="brand-doc">
+    <div class="container">
+      <header class="hero">
+        <svg class="hero-pulse" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h1>Brand guide</h1>
+        <p class="lede">The identity and interface rules behind getvibe.dev.</p>
+        <p class="sub">A quiet signal board for local-first companions. Direct language, exact commands, and no SaaS theater.</p>
+      </header>
+
+      <section class="brand-section" aria-labelledby="identity">
+        <h2 id="identity">Identity</h2>
+        <p><strong>getvibe.dev</strong> is the catalog for <strong>The Vibe Suite</strong>. It helps developers choose a companion for an agent coding workflow.</p>
+        <p>The catalog has no account, paid plan, or checkout. Each tool page must describe its own network and credential behavior accurately.</p>
+      </section>
+
+      <section class="brand-section" aria-labelledby="mark">
+        <h2 id="mark">Mark and wordmark</h2>
+        <p>The pulse represents a small companion that stays active beside the coding agent. Keep the path, round caps, and amber signal color intact.</p>
+        <div class="mark-stage">
+          <div class="mark-lockup">
+            <svg viewBox="0 0 64 64" role="img" aria-labelledby="mark-title"><title id="mark-title">Pulse mark</title><path d="M10 34h9l5-16 9 30 6-20 4 6h11" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>getvibe.dev</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-section" aria-labelledby="palette">
+        <h2 id="palette">Palette</h2>
+        <p>Near-black surfaces keep attention on commands. Signal amber marks focus, current state, and primary action.</p>
+        <div class="brand-grid">
+          <article class="brand-card"><span class="swatch swatch--canvas"></span><h3>Canvas</h3><code>#0a0a0c</code></article>
+          <article class="brand-card"><span class="swatch swatch--raised"></span><h3>Raised</h3><code>#121216</code></article>
+          <article class="brand-card"><span class="swatch swatch--foreground"></span><h3>Foreground</h3><code>#ededf0</code></article>
+          <article class="brand-card"><span class="swatch swatch--muted"></span><h3>Muted</h3><code>#a3a3ad</code></article>
+          <article class="brand-card"><span class="swatch swatch--signal"></span><h3>Signal</h3><code>#f0b429</code></article>
+          <article class="brand-card"><span class="swatch swatch--signal-hover"></span><h3>Signal hover</h3><code>#f6c555</code></article>
+        </div>
+      </section>
+
+      <section class="brand-section" aria-labelledby="type">
+        <h2 id="type">Typography</h2>
+        <div class="brand-grid">
+          <article class="brand-card"><h3>Interface</h3><p>Use the system sans stack. Keep headings compact and labels lowercase.</p></article>
+          <article class="brand-card"><h3>Commands</h3><p><code>npx vibemovie</code></p><p>Use the system monospace stack for code and install commands.</p></article>
+        </div>
+      </section>
+
+      <section class="brand-section" aria-labelledby="voice">
+        <h2 id="voice">Voice</h2>
+        <p>Lead with the product's job. Show the exact command. Link the source. Stop there.</p>
+        <div class="rules">
+          <div class="rule rule--do"><strong>Use</strong><p>“Your coding session as a short recap video.”</p></div>
+          <div class="rule"><strong>Avoid</strong><p>Unverified superlatives, download counts, testimonials, or privacy guarantees.</p></div>
+        </div>
+      </section>
+
+      <section class="brand-section" aria-labelledby="resources">
+        <h2 id="resources">Resources</h2>
+        <p><a class="btn btn--accent" href="/design.md">Read design.md</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-in">
+      <p>getvibe.dev — The Vibe Suite.</p>
+      <p><a href="/">back to the suite</a></p>
+    </div>
+  </footer>
+</body>
+</html>
