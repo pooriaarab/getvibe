@@ -25,6 +25,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Materialize design context
+        run: |
+          cp .agents/design.md design.md
+          cmp .agents/design.md design.md
+
       # --branch is what selects the environment. `release` matches the
       # project's production_branch and publishes to getvibe.dev; `main`
       # does not match, so it publishes to a preview URL instead.
