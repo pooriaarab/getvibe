@@ -19,7 +19,7 @@ concurrency:
 jobs:
   deploy:
     name: Deploy to Cloudflare Pages
-    runs-on: ubicloud-standard-2
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
