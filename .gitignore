@@ -6,3 +6,5 @@
 .DS_Store
 node_modules/
 .wrangler/
+# Cursor cloud — local secrets stay local
+.env.*.local
