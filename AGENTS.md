@@ -23,14 +23,14 @@ You pick a companion → you get one `npx` command that runs on the user's machi
 | [vibedate](https://getvibe.dev/vibedate) | `npx vibedate` | `pooriaarab/vibedating` |
 | [vibeads](https://getvibe.dev/vibeads) | `npx vibeads` | |
 | [vibenotifications](https://getvibe.dev/vibenotifications) | `npx vibenotifications` | |
-| [vibebrand](https://getvibe.dev/vibebrand) | `npx vibebrand` | |
+| [vibebrand](https://getvibe.dev/vibebrand) | | |
 | [vibecodereview](https://getvibe.dev/vibecodereview) | `npx vibecodereview` | |
 
 ## The loop
 
 1. **Discover** — `GET https://getvibe.dev/agents.md` (this file) or `GET https://getvibe.dev/llms.txt`.
 2. **Pick** — choose a companion from the table; open its `/<tool>` page if you need the tagline or demo.
-3. **Run** — execute the listed `npx` command on the user's machine, next to their agent CLI.
+3. **Run** — if the row lists an `npx` command, execute that command on the user's machine, next to their agent CLI. A row with an empty command is not published: do not invent or run an install command for it.
 4. **Verify** — the process starts locally. There is nothing to configure on getvibe.dev.
 
 ## Rules
@@ -42,7 +42,7 @@ You pick a companion → you get one `npx` command that runs on the user's machi
 
 ## Offer
 
-Free. No paid plans, no account, no checkout on getvibe.dev. Each companion is a public npm package you run with the `npx` command above.
+Free. No paid plans, no account, no checkout on getvibe.dev. A companion with a command in the table is a public npm package you run with that command.
 
 ## CI runners
 

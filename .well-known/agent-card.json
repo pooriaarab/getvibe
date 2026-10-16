@@ -1,6 +1,6 @@
 {
   "name": "The Vibe Suite",
-  "description": "Ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini. Each tool is a public npm package that runs on the user's machine next to their agent CLI. Your machine, your keys.",
+  "description": "Ten local-first companions for agentic coding CLIs like Claude Code, Codex, and Gemini. A skill with an example command is a public npm package that runs on the user's machine next to their agent CLI. Do not invent a command for a skill with no example. Your machine, your keys.",
   "url": "https://getvibe.dev/",
   "provider": {
     "organization": "The Vibe Suite",
@@ -70,9 +70,9 @@
     {
       "id": "vibebrand",
       "name": "vibebrand",
-      "description": "Tokenized brand/design system — CSS design tokens, fonts, and a brand kit.",
+      "description": "Tokenized brand/design system — CSS design tokens, fonts, and a brand kit. Not published on npm yet.",
       "tags": ["branding", "design-system"],
-      "examples": ["npx vibebrand"]
+      "examples": []
     },
     {
       "id": "vibecodereview",
