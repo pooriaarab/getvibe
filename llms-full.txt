@@ -33,4 +33,4 @@ Q: What is The Vibe Suite?
 A: Ten local-first, one-command companions for agentic coding CLIs like Claude Code, Codex, and Gemini.
 
 Q: How do I install a tool?
-A: Each tool installs with a single npx command and runs next to your agent CLI — no dashboard, no cloud account.
+A: Install a tool from the command on its card. It runs next to your agent CLI — no dashboard, no cloud account. A card with no command is not published yet.

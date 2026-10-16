@@ -4,7 +4,7 @@
 
 ## Product
 
-Each companion is a public npm package. You run it with one npx command on your own machine, next to your agent CLI. No dashboard, no cloud account.
+Each companion that lists an install command is a public npm package. You run that command on your own machine, next to your agent CLI. No dashboard, no cloud account. Do not invent an install command for a companion that does not list one.
 
 ## Free tools
 
@@ -16,7 +16,7 @@ Each companion is a public npm package. You run it with one npx command on your 
 - [vibedate](https://getvibe.dev/vibedate): Dating by token league. `npx vibedate`
 - [vibeads](https://getvibe.dev/vibeads): Contextual dev-tool discovery for Claude Code. `npx vibeads`
 - [vibenotifications](https://getvibe.dev/vibenotifications): Customizable notifications for Claude Code. `npx vibenotifications`
-- [vibebrand](https://getvibe.dev/vibebrand): Tokenized brand/design system — CSS design tokens, fonts, and a brand kit. `npx vibebrand`
+- [vibebrand](https://getvibe.dev/vibebrand): Tokenized brand/design system — CSS design tokens, fonts, and a brand kit. Not published on npm yet.
 - [vibecodereview](https://getvibe.dev/vibecodereview): A council of AI models reviews your PR. `npx vibecodereview`
 
 ## Pricing
